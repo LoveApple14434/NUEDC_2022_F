@@ -3846,3 +3846,323 @@ events:
         
       exitCode: 1
 ...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: D:/Program/Keil_v5/ARM/ARM_Compiler_5.06u7/bin/armcc.exe 
+      Build flags: --cpu=Cortex-M4;--apcs=interwork;--c99;--split_sections;-O0;--debug
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "__image.axf"
+      
+      The C compiler identification is ARMCC, found in:
+        D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/build/CMakeFiles/4.0.3/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:1284 (message)"
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineASMCompiler.cmake:139 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      Fatal error: A3900U: Unrecognized option '--version'.
+      1 Error, 0 Warnings
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:1284 (message)"
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineASMCompiler.cmake:139 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Checking whether the ASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
+      Fatal error: A3900U: Unrecognized option '--version'.
+      1 Error, 0 Warnings
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:1284 (message)"
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineASMCompiler.cmake:139 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Checking whether the ASM compiler is Clang using "--version" did not match "(clang version)":
+      Fatal error: A3900U: Unrecognized option '--version'.
+      1 Error, 0 Warnings
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:1284 (message)"
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineASMCompiler.cmake:139 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Checking whether the ASM compiler is ARMClang using "--version" did not match "armclang":
+      Fatal error: A3900U: Unrecognized option '--version'.
+      1 Error, 0 Warnings
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:1284 (message)"
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineASMCompiler.cmake:139 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Checking whether the ASM compiler is OrangeC using "--version" did not match "occ \\(OrangeC\\) Version":
+      Fatal error: A3900U: Unrecognized option '--version'.
+      1 Error, 0 Warnings
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:1284 (message)"
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineASMCompiler.cmake:139 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Checking whether the ASM compiler is HP using "-V" did not match "HP C":
+      Fatal error: A3900U: Unrecognized option '-V'.
+      1 Error, 0 Warnings
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:1284 (message)"
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineASMCompiler.cmake:139 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Checking whether the ASM compiler is Intel using "--version" did not match "(ICC)":
+      Fatal error: A3900U: Unrecognized option '--version'.
+      1 Error, 0 Warnings
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:1284 (message)"
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineASMCompiler.cmake:139 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Checking whether the ASM compiler is IntelLLVM using "--version" did not match "(Intel[^
+      ]+oneAPI)":
+      Fatal error: A3900U: Unrecognized option '--version'.
+      1 Error, 0 Warnings
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:1284 (message)"
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineASMCompiler.cmake:139 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Checking whether the ASM compiler is SunPro using "-V" did not match "Sun C":
+      Fatal error: A3900U: Unrecognized option '-V'.
+      1 Error, 0 Warnings
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:1284 (message)"
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineASMCompiler.cmake:139 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Checking whether the ASM compiler is XL using "-qversion" did not match "XL C":
+      Fatal error: A3900U: Unrecognized option '-qversion'.
+      1 Error, 0 Warnings
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:1284 (message)"
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineASMCompiler.cmake:139 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Checking whether the ASM compiler is MSVC using "-?" did not match "Microsoft":
+      Fatal error: A3900U: Unrecognized option '-?'.
+      1 Error, 0 Warnings
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:1284 (message)"
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineASMCompiler.cmake:139 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Checking whether the ASM compiler is TI using "-h" did not match "Texas Instruments":
+      Product: MDK Professional 5.40
+      Component: ARM Compiler 5.06 update 7 (build 960)
+      Tool: armasm [4d35fa]
+      For support see http://www.arm.com/support
+      Software supplied by: ARM Limited
+      
+      Usage:      armasm [options] sourcefile
+      
+      Options:
+      --list       listingfile   Write a listing file (see manual for options)
+       -o          outputfile    Name the final output file
+      --depend     dependfile    Save 'make' source file dependencies
+      --errors     errorsfile    Put stderr diagnostics to errorsfile
+       -I          dir[,dir]     Add dirs to source file search path
+      --pd
+      --predefine  directive     Pre-execute a SET{L,A,S} directive
+      --maxcache   <n>           Maximum cache size    (default 8MB)
+      --no_esc                   Ignore C-style (\\c) escape sequences
+      --no_warn                  Turn off Warning messages
+       -g                        Output debugging tables
+      --apcs       /<quals>      Make pre-definitions to match the
+                                 chosen procedure-call standard
+      --checkreglist             Warn about out of order LDM/STM register lists
+      --help                     Print this information
+      --li                       Little-endian ARM
+      --bi                       Big-endian ARM
+       -M                        Write source file dependency lists to stdout
+      --MD                       Write source file dependency lists to inputfile.d
+      --keep                     Keep local labels in symbol table of object file
+      --regnames none            Do not predefine register names
+      --split_ldm                Fault long LDM/STM
+      --unsafe                   Downgrade certain errors to warnings
+      --via        <file>        Read further arguments from <file>
+      --cpu        <target-cpu>  Set the target ARM core type
+      --cpu list                 Output a list of all the selectable CPUs
+      --fpu        <target-arch> Set target FP architecture version
+      --fpu list                 Output a list of all selectable FP architectures
+      --thumb                    Assemble Thumb instructions
+      --arm                      Assemble ARM instructions
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:1284 (message)"
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineASMCompiler.cmake:139 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Checking whether the ASM compiler is TIClang using "--version" did not match "(TI (.*) Clang Compiler)":
+      Fatal error: A3900U: Unrecognized option '--version'.
+      1 Error, 0 Warnings
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:1284 (message)"
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineASMCompiler.cmake:139 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Checking whether the ASM compiler is IAR using "" did not match "IAR Assembler":
+      Product: MDK Professional 5.40
+      Component: ARM Compiler 5.06 update 7 (build 960)
+      Tool: armasm [4d35fa]
+      For support see http://www.arm.com/support
+      Software supplied by: ARM Limited
+      
+      Usage:      armasm [options] sourcefile
+      
+      Options:
+      --list       listingfile   Write a listing file (see manual for options)
+       -o          outputfile    Name the final output file
+      --depend     dependfile    Save 'make' source file dependencies
+      --errors     errorsfile    Put stderr diagnostics to errorsfile
+       -I          dir[,dir]     Add dirs to source file search path
+      --pd
+      --predefine  directive     Pre-execute a SET{L,A,S} directive
+      --maxcache   <n>           Maximum cache size    (default 8MB)
+      --no_esc                   Ignore C-style (\\c) escape sequences
+      --no_warn                  Turn off Warning messages
+       -g                        Output debugging tables
+      --apcs       /<quals>      Make pre-definitions to match the
+                                 chosen procedure-call standard
+      --checkreglist             Warn about out of order LDM/STM register lists
+      --help                     Print this information
+      --li                       Little-endian ARM
+      --bi                       Big-endian ARM
+       -M                        Write source file dependency lists to stdout
+      --MD                       Write source file dependency lists to inputfile.d
+      --keep                     Keep local labels in symbol table of object file
+      --regnames none            Do not predefine register names
+      --split_ldm                Fault long LDM/STM
+      --unsafe                   Downgrade certain errors to warnings
+      --via        <file>        Read further arguments from <file>
+      --cpu        <target-cpu>  Set the target ARM core type
+      --cpu list                 Output a list of all the selectable CPUs
+      --fpu        <target-arch> Set target FP architecture version
+      --fpu list                 Output a list of all selectable FP architectures
+      --thumb                    Assemble Thumb instructions
+      --arm                      Assemble ARM instructions
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:1271 (message)"
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineASMCompiler.cmake:139 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Checking whether the ASM compiler is ARMCC using "" matched "(ARM Compiler)|(ARM Assembler)|(Arm Compiler)":
+      Product: MDK Professional 5.40
+      Component: ARM Compiler 5.06 update 7 (build 960)
+      Tool: armasm [4d35fa]
+      For support see http://www.arm.com/support
+      Software supplied by: ARM Limited
+      
+      Usage:      armasm [options] sourcefile
+      
+      Options:
+      --list       listingfile   Write a listing file (see manual for options)
+       -o          outputfile    Name the final output file
+      --depend     dependfile    Save 'make' source file dependencies
+      --errors     errorsfile    Put stderr diagnostics to errorsfile
+       -I          dir[,dir]     Add dirs to source file search path
+      --pd
+      --predefine  directive     Pre-execute a SET{L,A,S} directive
+      --maxcache   <n>           Maximum cache size    (default 8MB)
+      --no_esc                   Ignore C-style (\\c) escape sequences
+      --no_warn                  Turn off Warning messages
+       -g                        Output debugging tables
+      --apcs       /<quals>      Make pre-definitions to match the
+                                 chosen procedure-call standard
+      --checkreglist             Warn about out of order LDM/STM register lists
+      --help                     Print this information
+      --li                       Little-endian ARM
+      --bi                       Big-endian ARM
+       -M                        Write source file dependency lists to stdout
+      --MD                       Write source file dependency lists to inputfile.d
+      --keep                     Keep local labels in symbol table of object file
+      --regnames none            Do not predefine register names
+      --split_ldm                Fault long LDM/STM
+      --unsafe                   Downgrade certain errors to warnings
+      --via        <file>        Read further arguments from <file>
+      --cpu        <target-cpu>  Set the target ARM core type
+      --cpu list                 Output a list of all the selectable CPUs
+      --fpu        <target-arch> Set target FP architecture version
+      --fpu list                 Output a list of all selectable FP architectures
+      --thumb                    Assemble Thumb instructions
+      --arm                      Assemble ARM instructions
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "D:/Program Files/CMake/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/build/CMakeFiles/CMakeScratch/TryCompile-dqihyn"
+      binary: "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/build/CMakeFiles/CMakeScratch/TryCompile-dqihyn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "--cpu=Cortex-M4 --apcs=interwork --c99 --split_sections  -O0 --debug"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/build/CMakeFiles/CMakeScratch/TryCompile-dqihyn'
+        
+        Run Build Command(s): D:/Program/Ninja/ninja.exe -v cmTC_2916e
+        [1/2] D:\\Program\\Keil_v5\\ARM\\ARM_Compiler_5.06u7\\bin\\armcc.exe   --cpu=Cortex-M4 --apcs=interwork --c99 --split_sections  -O0 --debug  -g --depend=CMakeFiles\\cmTC_2916e.dir\\CMakeCCompilerABI.o.d --depend_single_line --no_depend_system_headers -o CMakeFiles\\cmTC_2916e.dir\\CMakeCCompilerABI.o -c "D:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && D:\\Program\\Keil_v5\\ARM\\ARM_Compiler_5.06u7\\bin\\armar.exe --create -cr libcmTC_2916e.a  CMakeFiles\\cmTC_2916e.dir\\CMakeCCompilerABI.o && cd ."
+        FAILED: libcmTC_2916e.a 
+        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && D:\\Program\\Keil_v5\\ARM\\ARM_Compiler_5.06u7\\bin\\armar.exe --create -cr libcmTC_2916e.a  CMakeFiles\\cmTC_2916e.dir\\CMakeCCompilerABI.o && cd ."
+        系统找不到指定的路径。\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
