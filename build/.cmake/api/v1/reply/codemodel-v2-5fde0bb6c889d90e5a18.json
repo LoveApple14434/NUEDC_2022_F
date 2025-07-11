@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "4.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "UCOSII-1-2",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "UCOSII-1-2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-UCOSII-1-2-Debug-8dbd7291745ed7b5ce58.json",
+					"name" : "UCOSII-1-2",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/build",
+		"source" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

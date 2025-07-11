@@ -1,0 +1,49 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "ARMCC",
+				"implicit" : {},
+				"path" : "D:/Program/Keil_v5/ARM/ARM_Compiler_5.06u7/bin/armasm.exe",
+				"version" : ""
+			},
+			"language" : "ASM",
+			"sourceFileExtensions" : 
+			[
+				"S",
+				"s",
+				"asm",
+				"msa"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"id" : "ARMCC",
+				"implicit" : 
+				{
+					"includeDirectories" : [],
+					"linkDirectories" : [],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : []
+				},
+				"path" : "D:/Program/Keil_v5/ARM/ARM_Compiler_5.06u7/bin/armcc.exe",
+				"version" : "5.6.960"
+			},
+			"language" : "C",
+			"sourceFileExtensions" : 
+			[
+				"c",
+				"m"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

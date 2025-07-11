@@ -1,0 +1,850 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "UCOSII-1-2.elf"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_options",
+			"target_compile_definitions",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 9,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 121,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 112,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 92,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "--cpu=Cortex-M4 --apcs=interwork --c99 --split_sections  -O0 --debug -g"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "STM32F407xx"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "USE_HAL_DRIVER"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../CORE"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../OBJ"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../USER"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../SYSTEM/delay"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../SYSTEM/sys"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../SYSTEM/usart"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../HALLIB/STM32F4xx_HAL_Driver/Inc"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../UCOSII/uC-LIB"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../UCOSII/uC-CPU"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../UCOSII/UCOS_BSP"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../UCOSII/uCOS-CONFIG"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../UCOSII/uCOS-II/Source"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../UCOSII/uC-CPU/ARM-Cortex-M4/RealView"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../UCOSII/uC-LIB/Ports/ARM-Cortex-M4/RealView"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../UCOSII/uCOS-II/Ports/ARM-Cortex-M4/Generic/RealView"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../HARDWARE/INC"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "99"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				33,
+				34,
+				35,
+				36,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "--cpu=Cortex-M4 --apcs=interwork --pd \"__MICROLIB SETA 1\" "
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "STM32F407xx"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "USE_HAL_DRIVER"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../CORE"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../OBJ"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../USER"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../SYSTEM/delay"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../SYSTEM/sys"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../SYSTEM/usart"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../HALLIB/STM32F4xx_HAL_Driver/Inc"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../UCOSII/uC-LIB"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../UCOSII/uC-CPU"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../UCOSII/UCOS_BSP"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../UCOSII/uCOS-CONFIG"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../UCOSII/uCOS-II/Source"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../UCOSII/uC-CPU/ARM-Cortex-M4/RealView"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../UCOSII/uC-LIB/Ports/ARM-Cortex-M4/RealView"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../UCOSII/uCOS-II/Ports/ARM-Cortex-M4/Generic/RealView"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../HARDWARE/INC"
+				}
+			],
+			"language" : "ASM",
+			"sourceIndexes" : 
+			[
+				4,
+				32,
+				37,
+				49
+			]
+		}
+	],
+	"id" : "UCOSII-1-2::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "--cpu=Cortex-M4 --apcs=interwork --c99 --split_sections  -O0 --debug -g",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "--map",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "--info=summarysizes,sizes,totals,unused,veneers",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "--callgraph",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "--xref",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "--entry=Reset_Handler",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "--strict",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "--summary_stderr",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "--scatter=D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/USER/../OBJ/Template.sct",
+				"role" : "flags"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "UCOSII-1-2",
+	"nameOnDisk" : "UCOSII-1-2.elf",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				33,
+				34,
+				35,
+				36,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				4,
+				32,
+				37,
+				49
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "main.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "stm32f4xx_it.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "system_stm32f4xx.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "stm32f4xx_hal_msp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/CORE/startup_stm32f407xx.s",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HALLIB/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/SYSTEM/delay/delay.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/SYSTEM/sys/sys.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/SYSTEM/usart/usart.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/UCOSII/UCOS_BSP/bsp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/UCOSII/UCOS_BSP/cpu_bsp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/UCOSII/uC-CPU/ARM-Cortex-M4/RealView/cpu_c.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/UCOSII/uC-CPU/cpu_core.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/UCOSII/uC-CPU/ARM-Cortex-M4/RealView/cpu_a.asm",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/UCOSII/uC-LIB/lib_ascii.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/UCOSII/uC-LIB/lib_math.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/UCOSII/uC-LIB/lib_mem.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/UCOSII/uC-LIB/lib_str.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/UCOSII/uC-LIB/Ports/ARM-Cortex-M4/RealView/lib_mem_a.asm",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/UCOSII/uCOS-II/Source/os_core.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/UCOSII/uCOS-II/Source/os_flag.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/UCOSII/uCOS-II/Source/os_mbox.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/UCOSII/uCOS-II/Source/os_mem.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/UCOSII/uCOS-II/Source/os_mutex.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/UCOSII/uCOS-II/Source/os_q.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/UCOSII/uCOS-II/Source/os_sem.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/UCOSII/uCOS-II/Source/os_task.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/UCOSII/uCOS-II/Source/os_time.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/UCOSII/uCOS-II/Source/os_tmr.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/UCOSII/uCOS-II/Ports/ARM-Cortex-M4/Generic/RealView/os_cpu_c.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/UCOSII/uCOS-II/Ports/ARM-Cortex-M4/Generic/RealView/os_cpu_a.asm",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/UCOSII/uCOS-CONFIG/app_hooks.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HARDWARE/SRC/AD9959.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HARDWARE/SRC/led.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HARDWARE/SRC/lcd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HARDWARE/SRC/key.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HARDWARE/SRC/24cxx.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HARDWARE/SRC/myiic.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HARDWARE/SRC/ctiic.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HARDWARE/SRC/ft5206.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HARDWARE/SRC/gt9147.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HARDWARE/SRC/ott2001a.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HARDWARE/SRC/touch.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HARDWARE/SRC/adc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HARDWARE/SRC/timer.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "D:/personal_programming/C/NUEDC/22F/AM_FM/Pro/HARDWARE/SRC/switch.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "rfft.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

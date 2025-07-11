@@ -1,0 +1,132 @@
+{
+	"cmake" : 
+	{
+		"generator" : 
+		{
+			"multiConfig" : false,
+			"name" : "Ninja"
+		},
+		"paths" : 
+		{
+			"cmake" : "D:/Program Files/CMake/bin/cmake.exe",
+			"cpack" : "D:/Program Files/CMake/bin/cpack.exe",
+			"ctest" : "D:/Program Files/CMake/bin/ctest.exe",
+			"root" : "D:/Program Files/CMake/share/cmake-4.0"
+		},
+		"version" : 
+		{
+			"isDirty" : false,
+			"major" : 4,
+			"minor" : 0,
+			"patch" : 3,
+			"string" : "4.0.3",
+			"suffix" : ""
+		}
+	},
+	"objects" : 
+	[
+		{
+			"jsonFile" : "codemodel-v2-5fde0bb6c889d90e5a18.json",
+			"kind" : "codemodel",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 8
+			}
+		},
+		{
+			"jsonFile" : "cache-v2-aa555509eaf8684d0e58.json",
+			"kind" : "cache",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 0
+			}
+		},
+		{
+			"jsonFile" : "cmakeFiles-v1-521bb16f32c3c03396af.json",
+			"kind" : "cmakeFiles",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 1
+			}
+		},
+		{
+			"jsonFile" : "toolchains-v1-2f3a8459889cf0836348.json",
+			"kind" : "toolchains",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		}
+	],
+	"reply" : 
+	{
+		"client-vscode" : 
+		{
+			"query.json" : 
+			{
+				"requests" : 
+				[
+					{
+						"kind" : "cache",
+						"version" : 2
+					},
+					{
+						"kind" : "codemodel",
+						"version" : 2
+					},
+					{
+						"kind" : "toolchains",
+						"version" : 1
+					},
+					{
+						"kind" : "cmakeFiles",
+						"version" : 1
+					}
+				],
+				"responses" : 
+				[
+					{
+						"jsonFile" : "cache-v2-aa555509eaf8684d0e58.json",
+						"kind" : "cache",
+						"version" : 
+						{
+							"major" : 2,
+							"minor" : 0
+						}
+					},
+					{
+						"jsonFile" : "codemodel-v2-5fde0bb6c889d90e5a18.json",
+						"kind" : "codemodel",
+						"version" : 
+						{
+							"major" : 2,
+							"minor" : 8
+						}
+					},
+					{
+						"jsonFile" : "toolchains-v1-2f3a8459889cf0836348.json",
+						"kind" : "toolchains",
+						"version" : 
+						{
+							"major" : 1,
+							"minor" : 0
+						}
+					},
+					{
+						"jsonFile" : "cmakeFiles-v1-521bb16f32c3c03396af.json",
+						"kind" : "cmakeFiles",
+						"version" : 
+						{
+							"major" : 1,
+							"minor" : 1
+						}
+					}
+				]
+			}
+		}
+	}
+}
