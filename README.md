@@ -1,4 +1,6 @@
-# NUEDC 2022 F
+# NUEDC 全国大学生电子设计竞赛 2022 F题
+### LoveApple14434 @ 吸锡器不嘻嘻，南京大学
+#### 平台：正点原子 探索者开发板 主控型号STM32F407ZGT6
 
 main.c以及CMakeLists位于/USER/
 

@@ -37,10 +37,10 @@ OS_STK START_TASK_STK[START_STK_SIZE];
 void start_task(void *pdata);
 
 
-#define TOUCH_TASK_PRIO         6
-#define TOUCH_STK_SIZE          128
-OS_STK TOUCH_TASK_STK[TOUCH_STK_SIZE];
-void touch_task(void *pdata);
+#define DEV_TASK_PRIO         6
+#define DEV_STK_SIZE          128
+OS_STK DEV_TASK_STK[DEV_STK_SIZE];
+void dev_task(void *pdata);
 uint8_t DrawTickBox(uint16_t, uint16_t, uint16_t, uint8_t, u16, u16);
 
 
@@ -149,13 +149,13 @@ void start_task(void *pdata)
 	
 	OS_ENTER_CRITICAL();  
 	
-    OSTaskCreateExt((void(*)(void*) )touch_task,                 
+    OSTaskCreateExt((void(*)(void*) )dev_task,                 
                     (void*          )0,
-                    (OS_STK*        )&TOUCH_TASK_STK[TOUCH_STK_SIZE-1],
-                    (INT8U          )TOUCH_TASK_PRIO,          
-                    (INT16U         )TOUCH_TASK_PRIO,            
-                    (OS_STK*        )&TOUCH_TASK_STK[0],         
-                    (INT32U         )TOUCH_STK_SIZE,            
+                    (OS_STK*        )&DEV_TASK_STK[DEV_STK_SIZE-1],
+                    (INT8U          )DEV_TASK_PRIO,          
+                    (INT16U         )DEV_TASK_PRIO,            
+                    (OS_STK*        )&DEV_TASK_STK[0],         
+                    (INT32U         )DEV_STK_SIZE,            
                     (void*          )0,                           
                     (INT16U         )OS_TASK_OPT_STK_CHK|OS_TASK_OPT_STK_CLR|OS_TASK_OPT_SAVE_FP);
 	OSTaskCreateExt((void(*)(void*) )dds_sweep_task,                 
@@ -203,11 +203,11 @@ void start_task(void *pdata)
                     (INT32U         )JUDGE_STK_SIZE,            
                     (void*          )0,                           
                     (INT16U         )OS_TASK_OPT_STK_CHK|OS_TASK_OPT_STK_CLR|OS_TASK_OPT_SAVE_FP);
-	//OSTaskSuspend(TOUCH_TASK_PRIO);
+	//OSTaskSuspend(DEV_TASK_PRIO);
 	OSTaskSuspend(AM_TASK_PRIO);
 	OSTaskSuspend(FM_TASK_PRIO);
 	//OSTaskSuspend(JUDGE_TASK_PRIO);
-	OSTaskSuspend(TOUCH_TASK_PRIO);
+	OSTaskSuspend(DEV_TASK_PRIO);
 	OSTaskSuspend(KEY_TASK_PRIO);
     OS_EXIT_CRITICAL();             
 	OSTaskSuspend(START_TASK_PRIO); 
@@ -299,12 +299,12 @@ void key_task(void *pdata)
 						BLACK, 
 						RED
 						);
-					OSTaskResume(TOUCH_TASK_PRIO);
+					OSTaskResume(DEV_TASK_PRIO);
 					OS_EXIT_CRITICAL();
 					break;
 				case KEY2_PRES:
 					OS_ENTER_CRITICAL();
-					OSTaskSuspend(TOUCH_TASK_PRIO);
+					OSTaskSuspend(DEV_TASK_PRIO);
 					LCD_Fill(0, 0, lcddev.width, lcddev.height, GRED);
 					OSTaskResume(JUDGE_TASK_PRIO);
 					OS_EXIT_CRITICAL();
@@ -754,7 +754,7 @@ void am_task(void* pdata)
 	}
 }
 
-void touch_task(void *pdata)
+void dev_task(void *pdata)
 {
 	//uint8_t down=0;
 	OS_CPU_SR cpu_sr=0;

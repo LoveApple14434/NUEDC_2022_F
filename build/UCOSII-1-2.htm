@@ -3,7 +3,7 @@
 <title>Static Call Graph - [D:\personal_programming\C\NUEDC\22F\AM_FM\Pro\build\UCOSII-1-2.elf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image D:\personal_programming\C\NUEDC\22F\AM_FM\Pro\build\UCOSII-1-2.elf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Fri Jul 11 14:09:05 2025
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Sun Jul 13 14:29:00 2025
 <BR><P>
 <H3>Maximum Stack Usage =        664 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -139,12 +139,12 @@ Function Pointers
  <LI><a href="#[66]">_printf_input_char</a> from _printf_char_common.o(.text) referenced from _printf_char_common.o(.text)
  <LI><a href="#[74]">am_task</a> from main.o(i.am_task) referenced from main.o(i.start_task)
  <LI><a href="#[73]">dds_sweep_task</a> from main.o(i.dds_sweep_task) referenced from main.o(i.start_task)
+ <LI><a href="#[72]">dev_task</a> from main.o(i.dev_task) referenced from main.o(i.start_task)
  <LI><a href="#[76]">fm_task</a> from main.o(i.fm_task) referenced from main.o(i.start_task)
  <LI><a href="#[65]">fputc</a> from usart.o(i.fputc) referenced from _printf_char_file.o(.text)
  <LI><a href="#[77]">judge_task</a> from main.o(i.judge_task) referenced from main.o(i.start_task)
  <LI><a href="#[75]">key_task</a> from main.o(i.key_task) referenced from main.o(i.start_task)
  <LI><a href="#[71]">start_task</a> from main.o(i.start_task) referenced from main.o(i.main)
- <LI><a href="#[72]">touch_task</a> from main.o(i.touch_task) referenced from main.o(i.start_task)
 </UL>
 <P>
 <H3>
@@ -552,11 +552,11 @@ Global Symbols
 <LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskResume
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskCreateExt
 <LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSStatInit
-<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touch_task
 <LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;start_task
 <LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;key_task
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;judge_task
 <LI><a href="#[1a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;input_task
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dev_task
 <LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dds_sweep_task
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;am_task
 <LI><a href="#[163]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskStkChk
@@ -578,11 +578,11 @@ Global Symbols
 <LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskResume
 <LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskCreateExt
 <LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSStatInit
-<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touch_task
 <LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;start_task
 <LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;key_task
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;judge_task
 <LI><a href="#[1a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;input_task
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dev_task
 <LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dds_sweep_task
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;am_task
 <LI><a href="#[163]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskStkChk
@@ -1021,9 +1021,9 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Fill
 </UL>
-<BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touch_task
-<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;key_task
+<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;key_task
 <LI><a href="#[1a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;input_task
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dev_task
 </UL>
 
 <P><STRONG><a name="[130]"></a>Error_Handler</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, timer.o(i.Error_Handler))
@@ -1054,12 +1054,12 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GT9147_WR_Reg
 <LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GT9147_RD_Reg
 <LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FT5206_WR_Reg
 <LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FT5206_RD_Reg
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CT_IIC_Init
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Init
 </UL>
@@ -1083,10 +1083,10 @@ Global Symbols
 <LI>Call Chain = FT5206_Scan &rArr; GT9147_WR_Reg &rArr; CT_IIC_Wait_Ack &rArr; CT_IIC_Stop &rArr; CT_Delay &rArr; delay_us &rArr; delay_osschedunlock &rArr; OSSchedUnlock &rArr; OS_Sched
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
 <LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GT9147_WR_Reg
 <LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GT9147_RD_Reg
 <LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FT5206_RD_Reg
-<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> touch.o(i.TP_Init)
 </UL>
@@ -1114,16 +1114,16 @@ Global Symbols
 
 <P><STRONG><a name="[c5]"></a>GT9147_Init</STRONG> (Thumb, 292 bytes, Stack size 40 bytes, gt9147.o(i.GT9147_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 168 + Unknown Stack Size
-<LI>Call Chain = GT9147_Init &rArr; GT9147_Send_Cfg &rArr; GT9147_WR_Reg &rArr; CT_IIC_Wait_Ack &rArr; CT_IIC_Stop &rArr; CT_Delay &rArr; delay_us &rArr; delay_osschedunlock &rArr; OSSchedUnlock &rArr; OS_Sched
+<LI>Call Chain = GT9147_Init &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GT9147_Send_Cfg
 <LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GT9147_WR_Reg
 <LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GT9147_RD_Reg
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CT_IIC_Init
-<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Init
 </UL>
@@ -1847,12 +1847,12 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WriteRAM_Prepare
 <LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetCursor
 </UL>
-<BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touch_task
-<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;key_task
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;judge_task
 <LI><a href="#[1a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;input_task
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fm_task
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dev_task
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;am_task
 <LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawTickBox
 </UL>
@@ -1865,6 +1865,7 @@ Global Symbols
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
 <LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SRAM_Init
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WriteReg
 <LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_REG
 <LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_DATA
@@ -1872,7 +1873,6 @@ Global Symbols
 <LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_RD_DATA
 <LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Display_Dir
 <LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1894,11 +1894,11 @@ Global Symbols
 <P><STRONG><a name="[127]"></a>LCD_SSD_BackLightSet</STRONG> (Thumb, 80 bytes, Stack size 32 bytes, lcd.o(i.LCD_SSD_BackLightSet))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = LCD_SSD_BackLightSet &rArr; __aeabi_dmul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_REG
-<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_DATA
-<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
 <LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
 <LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2uiz
+<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_REG
+<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WR_DATA
 </UL>
 <BR>[Called By]<UL><LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
 </UL>
@@ -1939,12 +1939,12 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 204<LI>Call Chain = LCD_ShowFloat &rArr; LCD_ShowNum &rArr; LCD_ShowChar &rArr; LCD_Fast_DrawPoint &rArr; LCD_WR_REG
 </UL>
 <BR>[Calls]<UL><LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowNum
-<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowChar
-<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Pow
 <LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
 <LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
 <LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2uiz
 <LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
+<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowChar
+<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Pow
 </UL>
 <BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fm_task
 </UL>
@@ -1956,10 +1956,10 @@ Global Symbols
 <LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Pow
 </UL>
 <BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowFloat
-<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touch_task
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;judge_task
 <LI><a href="#[1a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;input_task
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fm_task
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dev_task
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;am_task
 <LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Adj_Info_Show
 </UL>
@@ -1969,10 +1969,10 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowChar
 </UL>
-<BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touch_task
-<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;judge_task
+<BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;judge_task
 <LI><a href="#[1a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;input_task
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fm_task
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dev_task
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;am_task
 <LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Adjust
 <LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Adj_Info_Show
@@ -1984,7 +1984,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowChar
 <LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Pow
 </UL>
-<BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touch_task
+<BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dev_task
 </UL>
 
 <P><STRONG><a name="[123]"></a>LCD_WR_DATA</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, lcd.o(i.LCD_WR_DATA))
@@ -2428,14 +2428,14 @@ Global Symbols
 
 <P><STRONG><a name="[16c]"></a>OTT2001A_Init</STRONG> (Thumb, 186 bytes, Stack size 32 bytes, ott2001a.o(i.OTT2001A_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
-<LI>Call Chain = OTT2001A_Init &rArr; OTT2001A_SensorControl &rArr; OTT2001A_WR_Reg &rArr; CT_IIC_Wait_Ack &rArr; CT_IIC_Stop &rArr; CT_Delay &rArr; delay_us &rArr; delay_osschedunlock &rArr; OSSchedUnlock &rArr; OS_Sched
+<LI>Call Chain = OTT2001A_Init &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[16d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OTT2001A_SensorControl
 <LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OTT2001A_RD_Reg
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CT_IIC_Init
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Init
 </UL>
@@ -2458,11 +2458,11 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
 <LI>Call Chain = OTT2001A_Scan &rArr; OTT2001A_RD_Reg &rArr; CT_IIC_Wait_Ack &rArr; CT_IIC_Stop &rArr; CT_Delay &rArr; delay_us &rArr; delay_osschedunlock &rArr; OSSchedUnlock &rArr; OS_Sched
 </UL>
-<BR>[Calls]<UL><LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OTT2001A_RD_Reg
-<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
 <LI><a href="#[16f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
 <LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2uiz
 <LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
+<LI><a href="#[16e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OTT2001A_RD_Reg
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> touch.o(i.TP_Init)
 </UL>
@@ -2618,11 +2618,6 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[17d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sqrt
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 <LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowString
-<LI><a href="#[187]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Save_Adjdata
-<LI><a href="#[188]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Get_Adjdata
-<LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Drow_Touch_Point
-<LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Adj_Info_Show
-<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
 <LI><a href="#[184]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fmul
 <LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
 <LI><a href="#[183]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2f
@@ -2635,6 +2630,11 @@ Global Symbols
 <LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdcmple
 <LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
 <LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2uiz
+<LI><a href="#[187]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Save_Adjdata
+<LI><a href="#[188]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Get_Adjdata
+<LI><a href="#[17c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Drow_Touch_Point
+<LI><a href="#[17b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Adj_Info_Show
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Init
 </UL>
@@ -2654,10 +2654,10 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 136 + Unknown Stack Size
 <LI>Call Chain = TP_Get_Adjdata &rArr; AT24CXX_ReadLenByte &rArr; AT24CXX_ReadOneByte &rArr; IIC_Read_Byte &rArr; IIC_NAck &rArr; delay_us &rArr; delay_osschedunlock &rArr; OSSchedUnlock &rArr; OS_Sched
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT24CXX_ReadOneByte
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT24CXX_ReadLenByte
-<LI><a href="#[183]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2f
+<BR>[Calls]<UL><LI><a href="#[183]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2f
 <LI><a href="#[17f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fdiv
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT24CXX_ReadOneByte
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT24CXX_ReadLenByte
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Init
 <LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Adjust
@@ -2722,10 +2722,10 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 128 + Unknown Stack Size
 <LI>Call Chain = TP_Save_Adjdata &rArr; AT24CXX_WriteLenByte &rArr; AT24CXX_WriteOneByte &rArr; delay_ms &rArr; delay_us &rArr; delay_osschedunlock &rArr; OSSchedUnlock &rArr; OS_Sched
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT24CXX_WriteOneByte
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT24CXX_WriteLenByte
-<LI><a href="#[184]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fmul
+<BR>[Calls]<UL><LI><a href="#[184]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fmul
 <LI><a href="#[186]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2iz
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT24CXX_WriteOneByte
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT24CXX_WriteLenByte
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Init
 <LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Adjust
@@ -2735,12 +2735,12 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 208 + Unknown Stack Size
 <LI>Call Chain = TP_Scan &rArr; TP_Read_XY2 &rArr; TP_Read_XY &rArr; TP_Read_XOY &rArr; TP_Read_AD &rArr; TP_Write_Byte &rArr; delay_us &rArr; delay_osschedunlock &rArr; OSSchedUnlock &rArr; OS_Sched
 </UL>
-<BR>[Calls]<UL><LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Read_XY2
-<LI><a href="#[184]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fmul
+<BR>[Calls]<UL><LI><a href="#[184]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fmul
 <LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
 <LI><a href="#[183]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2f
 <LI><a href="#[18f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2uiz
 <LI><a href="#[18e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fadd
+<LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Read_XY2
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> touch.o(.data)
 </UL>
@@ -2797,11 +2797,11 @@ Global Symbols
 <P><STRONG><a name="[114]"></a>Write_Frequence</STRONG> (Thumb, 56 bytes, Stack size 24 bytes, AD9959.o(i.Write_Frequence))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = Write_Frequence &rArr; Freq2Word &rArr; __aeabi_dmul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteData_AD9959
+<BR>[Calls]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteData_AD9959
 <LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Freq2Word
 <LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Channel_Select
 <LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AD9959_error
-<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
 </UL>
 <BR>[Called By]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_AD9959
 <LI><a href="#[199]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dds_task
@@ -2928,9 +2928,9 @@ Global Symbols
 <LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AD9959_IO_Update
 <LI><a href="#[1a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 </UL>
-<BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touch_task
-<LI><a href="#[1a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;input_task
+<BR>[Called By]<UL><LI><a href="#[1a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;input_task
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fm_task
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dev_task
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;am_task
 </UL>
 
@@ -2957,10 +2957,10 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
 <LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY_Scan
-<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touch_task
 <LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;key_task
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;judge_task
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fm_task
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dev_task
 <LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dds_sweep_task
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;am_task
 <LI><a href="#[197]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adjust_filter
@@ -3021,6 +3021,23 @@ Global Symbols
 <LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Read_Byte
 </UL>
 
+<P><STRONG><a name="[72]"></a>dev_task</STRONG> (Thumb, 1732 bytes, Stack size 48 bytes, main.o(i.dev_task))
+<BR><BR>[Stack]<UL><LI>Max Depth = 288 + Unknown Stack Size
+<LI>Call Chain = dev_task &rArr; input_task &rArr; dds_task &rArr; Write_Frequence &rArr; Freq2Word &rArr; __aeabi_dmul
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
+<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
+<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowxNum
+<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowString
+<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowNum
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Fill
+<LI><a href="#[1a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;input_task
+<LI><a href="#[199]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dds_task
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawTickBox
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> main.o(i.start_task)
+</UL>
 <P><STRONG><a name="[76]"></a>fm_task</STRONG> (Thumb, 2576 bytes, Stack size 400 bytes, main.o(i.fm_task))
 <BR><BR>[Stack]<UL><LI>Max Depth = 664 + Unknown Stack Size
 <LI>Call Chain = fm_task &rArr; rfft &rArr; sin &rArr; cos &rArr; __aeabi_dmul
@@ -3071,7 +3088,7 @@ Global Symbols
 <LI><a href="#[199]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dds_task
 <LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawTickBox
 </UL>
-<BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;touch_task
+<BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dev_task
 </UL>
 
 <P><STRONG><a name="[77]"></a>judge_task</STRONG> (Thumb, 402 bytes, Stack size 16 bytes, main.o(i.judge_task))
@@ -3198,23 +3215,6 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main.o(i.main)
 </UL>
-<P><STRONG><a name="[72]"></a>touch_task</STRONG> (Thumb, 1732 bytes, Stack size 48 bytes, main.o(i.touch_task))
-<BR><BR>[Stack]<UL><LI>Max Depth = 288 + Unknown Stack Size
-<LI>Call Chain = touch_task &rArr; input_task &rArr; dds_task &rArr; Write_Frequence &rArr; Freq2Word &rArr; __aeabi_dmul
-</UL>
-<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
-<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Save
-<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_CPU_SR_Restore
-<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowxNum
-<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowString
-<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowNum
-<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Fill
-<LI><a href="#[1a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;input_task
-<LI><a href="#[199]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dds_task
-<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrawTickBox
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> main.o(i.start_task)
-</UL>
 <P><STRONG><a name="[1a8]"></a>uart_init</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, usart.o(i.uart_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = uart_init &rArr; HAL_UART_Init &rArr; HAL_UART_MspInit &rArr; HAL_NVIC_SetPriority &rArr; __NVIC_SetPriority
 </UL>
@@ -3291,8 +3291,8 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[19d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rfft
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fm_task
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;am_task
-<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OTT2001A_Scan
 <LI><a href="#[1a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cos
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OTT2001A_Scan
 </UL>
 
 <P><STRONG><a name="[1f7]"></a>_dflt</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, dflt_clz.o(x$fpl$dflt), UNUSED)
@@ -3316,8 +3316,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[17d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sqrt
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fm_task
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;am_task
-<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Adjust
 <LI><a href="#[1a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cos
+<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Adjust
 </UL>
 
 <P><STRONG><a name="[1b1]"></a>_dcmple</STRONG> (Thumb, 120 bytes, Stack size 32 bytes, dleqf.o(x$fpl$dleqf), UNUSED)
@@ -3340,10 +3340,10 @@ Global Symbols
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;am_task
 <LI><a href="#[171]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Phase2Word
 <LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Freq2Word
+<LI><a href="#[1a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cos
 <LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Adjust
 <LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OTT2001A_Scan
 <LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SSD_BackLightSet
-<LI><a href="#[1a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cos
 </UL>
 
 <P><STRONG><a name="[1b3]"></a>_dmul</STRONG> (Thumb, 332 bytes, Stack size 32 bytes, dmul.o(x$fpl$dmul), UNUSED)
@@ -3374,8 +3374,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[17d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sqrt
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fm_task
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;am_task
-<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Adjust
 <LI><a href="#[1a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cos
+<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TP_Adjust
 </UL>
 
 <P><STRONG><a name="[1b4]"></a>_drcmple</STRONG> (Thumb, 108 bytes, Stack size 16 bytes, drleqf.o(x$fpl$drleqf), UNUSED)
@@ -3387,8 +3387,8 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[19d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rfft
 <LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowFloat
-<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OTT2001A_Scan
 <LI><a href="#[1a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sin
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OTT2001A_Scan
 </UL>
 
 <P><STRONG><a name="[1b6]"></a>_drsb</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, daddsub_clz.o(x$fpl$drsb), UNUSED)
